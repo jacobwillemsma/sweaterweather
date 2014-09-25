@@ -8,3 +8,9 @@ jQuery(function () {
         $('.header-10-sub').css('height', sH + 'px');
     });
 });
+
+Weather.getCurrent("Kansas City", function(current) {
+  console.log(
+    ["currently:",current.temperature(),"and",current.conditions()].join(" ")
+  );
+});
